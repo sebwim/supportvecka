@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Semester Ersättningsreglering</title>
+<meta charset="UTF-8"</meta>
+<style>
+p {
+	font-family: tahoma;
+	font-size: 75%;
+}
+</style>
+
+</head>
+
+
+
+<body>
+  <p><b>Sommarsemester Countdown</b></p>
+  <p id="and"></p>
+  <p id="jen"></p>
+  <p id="lot"></p>
+  <p id="pat"></p>
+  <p id="seb"></p>
+  <p id="sta"></p>
+
+<!-- Sebastian -->
+<script>
+//seb
+var sebSemester = new Date("Aug 2, 2019 15:00:00").getTime();
+var sebTillbaka = new Date("Aug 19, 2019 08:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distanceSeb = sebSemester - now;
+  var distanceTillbakaSeb = sebTillbaka - now;
+  // Time calculations for days, hours, minutes and seconds
+  var daysSeb = Math.floor(distanceSeb / (1000 * 60 * 60 * 24));
+  var hoursSeb = Math.floor((distanceSeb % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesSeb = Math.floor((distanceSeb % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsSeb = Math.floor((distanceSeb % (1000 * 60)) / 1000);
+  var daysTillbakaSeb = Math.floor(distanceTillbakaSeb / (1000 * 60 * 60 * 24));
+  var hoursTillbakaSeb = Math.floor((distanceTillbakaSeb % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesTillbakaSeb = Math.floor((distanceTillbakaSeb % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsTillbakaSeb = Math.floor((distanceTillbakaSeb % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("seb").innerHTML = "Sebastian: " + daysSeb + " dagar " + hoursSeb + " timmar "
+  + minutesSeb + " minuter och " + secondsSeb + " sekunder.";
+  // If the count down is finished, write some text 
+  if (distanceSeb < 0){
+	document.getElementById("seb").innerHTML = "Sebastian är tillbaka om " + daysTillbakaSeb + " dagar " + hoursTillbakaSeb + " timmar " + minutesTillbakaSeb + " minuter " + secondsTillbakaSeb + " sekunder";
+  }
+  
+  if (distanceTillbakaSeb < 0) {
+    clearInterval(x);
+    document.getElementById("seb").innerHTML = "Sommaren är över för Sebastian :(";
+  }
+}, 1000);
+</script>
+
+<!-- Jens -->
+<script>
+//jen
+var jenSemester = new Date("Jul 12, 2019 15:00:00").getTime();
+var jenTillbaka = new Date("Aug 14, 2019 08:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distanceJen = jenSemester - now;
+  var distanceTillbakaJen = jenTillbaka - now;
+  // Time calculations for days, hours, minutes and seconds
+  var daysJen = Math.floor(distanceJen / (1000 * 60 * 60 * 24));
+  var hoursJen = Math.floor((distanceJen % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesJen = Math.floor((distanceJen % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsJen = Math.floor((distanceJen % (1000 * 60)) / 1000);
+  var daysTillbakaJen = Math.floor(distanceTillbakaJen / (1000 * 60 * 60 * 24));
+  var hoursTillbakaJen = Math.floor((distanceTillbakaJen % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesTillbakaJen = Math.floor((distanceTillbakaJen % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsTillbakaJen = Math.floor((distanceTillbakaJen % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("jen").innerHTML = "Jens: " + daysJen + " dagar " + hoursJen + " timmar "
+  + minutesJen + " minuter och " + secondsJen + " sekunder.";
+  // If the count down is finished, write some text 
+  if (distanceJen < 0){
+	document.getElementById("jen").innerHTML = "Jens är tillbaka om " + daysTillbakaJen + " dagar " + hoursTillbakaJen + " timmar " + minutesTillbakaJen + " minuter " + secondsTillbakaJen + " sekunder";
+  }
+  
+  if (distanceTillbakaJen < 0) {
+    clearInterval(x);
+    document.getElementById("jen").innerHTML = "Sommaren är över för Jens :(";
+  }
+}, 1000);
+</script>
+
+<!-- Patrik -->
+<script>
+ //pat
+var patSemester = new Date("Jul 12, 2019 15:00:00").getTime();
+var patTillbaka = new Date("Aug 07, 2019 08:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distancePat = patSemester - now;
+  var distanceTillbakaPat = patTillbaka - now;
+  // Time calculations for days, hours, minutes and seconds
+  var daysPat = Math.floor(distancePat / (1000 * 60 * 60 * 24));
+  var hoursPat = Math.floor((distancePat % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesPat = Math.floor((distancePat % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsPat = Math.floor((distancePat % (1000 * 60)) / 1000);
+  var daysTillbakaPat = Math.floor(distanceTillbakaPat / (1000 * 60 * 60 * 24));
+  var hoursTillbakaPat = Math.floor((distanceTillbakaPat % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesTillbakaPat = Math.floor((distanceTillbakaPat % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsTillbakaPat = Math.floor((distanceTillbakaPat % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("pat").innerHTML = "Patrik: " + daysPat + " dagar " + hoursPat + " timmar "
+  + minutesPat + " minuter och " + secondsPat + " sekunder.";
+  // If the count down is finished, write some text 
+  if (distancePat < 0){
+	document.getElementById("pat").innerHTML = "Patrik är tillbaka om " + daysTillbakaPat + " dagar " + hoursTillbakaPat + " timmar " + minutesTillbakaPat + " minuter " + secondsTillbakaPat + " sekunder";
+  }
+  
+  if (distanceTillbakaPat < 0) {
+    clearInterval(x);
+    document.getElementById("pat").innerHTML = "Sommaren är över för Patrik :(";
+  }
+}, 1000);
+</script>
+
+<!-- lotta -->
+<script>
+//lot
+var lotSemester = new Date("Jul 25, 2019 15:00:00").getTime();
+var lotTillbaka = new Date("Aug 06, 2019 08:00:00").getTime();
+// lotta semester numero duo
+// Jul 23, 2019 15:00:00
+// Aug 06, 2019 08:00:00
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distanceLot = lotSemester - now;
+  var distanceTillbakaLot = lotTillbaka - now;
+  // Time calculations for days, hours, minutes and seconds
+  var daysLot = Math.floor(distanceLot / (1000 * 60 * 60 * 24));
+  var hoursLot = Math.floor((distanceLot % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesLot = Math.floor((distanceLot % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsLot = Math.floor((distanceLot % (1000 * 60)) / 1000);
+  var daysTillbakaLot = Math.floor(distanceTillbakaLot / (1000 * 60 * 60 * 24));
+  var hoursTillbakaLot = Math.floor((distanceTillbakaLot % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesTillbakaLot = Math.floor((distanceTillbakaLot % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsTillbakaLot = Math.floor((distanceTillbakaLot % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("lot").innerHTML = "Lotta: " + daysLot + " dagar " + hoursLot + " timmar "
+  + minutesLot + " minuter och " + secondsLot + " sekunder.";
+  // If the count down is finished, write some text 
+  if (distanceLot < 0){
+	document.getElementById("lot").innerHTML = "Lotta är tillbaka om " + daysTillbakaLot + " dagar " + hoursTillbakaLot + " timmar " + minutesTillbakaLot + " minuter " + secondsTillbakaLot + " sekunder";
+  }
+  
+  if (distanceTillbakaLot < 0) {
+    clearInterval(x);
+    document.getElementById("lot").innerHTML = "Sommaren är över för Lotta :(";
+  }
+}, 1000);
+</script>
+
+<!-- Staffan -->
+<script>
+//sta
+var staSemester = new Date("Jun 19, 2019 15:00:00").getTime();
+var staTillbaka = new Date("Aug 08, 2019 08:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distanceSta = staSemester - now;
+  var distanceTillbakaSta = staTillbaka - now;
+  // Time calculations for days, hours, minutes and seconds
+  var daysSta = Math.floor(distanceSta / (1000 * 60 * 60 * 24));
+  var hoursSta = Math.floor((distanceSta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesSta = Math.floor((distanceSta % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsSta = Math.floor((distanceSta % (1000 * 60)) / 1000);
+  var daysTillbakaSta = Math.floor(distanceTillbakaSta / (1000 * 60 * 60 * 24));
+  var hoursTillbakaSta = Math.floor((distanceTillbakaSta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesTillbakaSta = Math.floor((distanceTillbakaSta % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsTillbakaSta = Math.floor((distanceTillbakaSta % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("sta").innerHTML = "Staffan: " + daysSta + " dagar " + hoursSta + " timmar "
+  + minutesSta + " minuter och " + secondsSta + " sekunder.";
+  // If the count down is finished, write some text 
+  if (distanceSta < 0){
+	document.getElementById("sta").innerHTML = "Staffan är tillbaka om " + daysTillbakaSta + " dagar " + hoursTillbakaSta + " timmar " + minutesTillbakaSta + " minuter " + secondsTillbakaSta + " sekunder";
+  }
+  
+  if (distanceTillbakaSta < 0) {
+    clearInterval(x);
+    document.getElementById("sta").innerHTML = "Sommaren är över för Staffan :(";
+  }
+}, 1000);
+</script>
+
+<!-- Anders -->
+<script>
+//and
+var andSemester = new Date("Jul 05, 2019 15:00:00").getTime();
+var andTillbaka = new Date("Aug 12, 2019 08:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distanceAnd = andSemester - now;
+  var distanceTillbakaAnd = andTillbaka - now;
+  // Time calculations for days, hours, minutes and seconds
+  var daysAnd = Math.floor(distanceAnd / (1000 * 60 * 60 * 24));
+  var hoursAnd = Math.floor((distanceAnd % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesAnd = Math.floor((distanceAnd % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsAnd = Math.floor((distanceAnd % (1000 * 60)) / 1000);
+  var daysTillbakaAnd = Math.floor(distanceTillbakaAnd / (1000 * 60 * 60 * 24));
+  var hoursTillbakaAnd = Math.floor((distanceTillbakaAnd % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesTillbakaAnd = Math.floor((distanceTillbakaAnd % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsTillbakaAnd = Math.floor((distanceTillbakaAnd % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("and").innerHTML = "Anders: " + daysAnd + " dagar " + hoursAnd + " timmar "
+  + minutesAnd + " minuter " + secondsAnd + " sekunder ";
+  // If the count down is finished, write some text 
+  if (distanceAnd < 0) {
+    document.getElementById("and").innerHTML = "Anders är tillbaka om " + daysTillbakaAnd + " dagar " + hoursTillbakaAnd + " timmar " + minutesTillbakaAnd + " minuter " + secondsTillbakaAnd + " sekunder";
+  }
+  
+  if (distanceTillbakaAnd < 0) {
+      clearInterval(x);
+	  document.getElementById("and").innerHTML = "Sommaren är över för Anders :(";
+	  }
+	  
+}, 1000);
+</script>
+
+</body>
+</html>
