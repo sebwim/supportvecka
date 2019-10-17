@@ -29,8 +29,7 @@ p {
 			return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
 		}
 
-		//var weekNumber = (new Date()).getWeek();
-		var weekNumber = 13;
+		var weekNumber = (new Date()).getWeek();
 		var now = new Date();
 		
 		var produkter = ["Ersättningsreglering", "Gemensam försäkringsinformation", "Kvalifikation", "Julschema"];
